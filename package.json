@@ -1,6 +1,14 @@
 {
   "name": "thank-you-tweet-button-004",
   "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codesweetly/thank-you-tweet-button-004.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codesweetly/thank-you-tweet-button-004/issues",
+    "email": "contact@codesweetly.com"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
