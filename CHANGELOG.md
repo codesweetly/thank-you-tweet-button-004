@@ -1,5 +1,10 @@
 # Changelog
 
+## <small>5.0.2 (2025-04-28)</small>
+
+* fix(tweetbutton): change tweet text to message ([61e2923](https://github.com/codesweetly/thank-you-tweet-button-004/commit/61e2923))
+* chore(github): configure release-it to auto-generate project's github releases ([0a92fd4](https://github.com/codesweetly/thank-you-tweet-button-004/commit/0a92fd4))
+
 ## <small>5.0.1 (2025-04-28)</small>
 
 * fix(tweetbutton): change send text to post ([7e9102b](https://github.com/codesweetly/thank-you-tweet-button-004/commit/7e9102b))
