@@ -11,7 +11,7 @@ function showError() {
   const errorContainer = document.createElement("div");
   const errorParagraph = document.createElement("p");
   const errorParagraphText = document.createTextNode(
-    "ⓘ Error: 'rating' parameter is missing in 'tweetButtonParameters'."
+    "ⓘ Error: One or more required parameters are missing in 'tweetButtonParameters'."
   );
   errorContainer.setAttribute(
     "style",
@@ -26,7 +26,11 @@ function showError() {
   return errorContainer;
 }
 
-export function tweetButton(rating: number, quantity?: number) {
+export function tweetButton(
+  rating: number,
+  bestNPMPackage: string,
+  quantity?: number
+) {
   const tweetButtonContainer = document.createElement("section");
   const anchorElement = document.createElement("a");
   const anchorElementContent = document.createTextNode(
@@ -36,7 +40,7 @@ export function tweetButton(rating: number, quantity?: number) {
     quantity && quantity > 1 ? quantity : "an"
   }+NPM+${
     quantity && quantity > 1 ? "packages" : "package"
-  }.%0A%0ABook's+Rating:+${rating}-star+rating!+${generateStarIcons(
+  }.%0A%0AMy+Favorite:+${bestNPMPackage}%0A%0ABook's+Rating:+${rating}-star+rating!+${generateStarIcons(
     rating
   )}%0A%0Ahttps%3A%2F%2Famzn.to/4lifL3n`;
 
@@ -48,5 +52,7 @@ export function tweetButton(rating: number, quantity?: number) {
   anchorElement.appendChild(anchorElementContent);
   tweetButtonContainer.appendChild(anchorElement);
 
-  return typeof rating === "number" ? tweetButtonContainer : showError();
+  return typeof rating === "number" && bestNPMPackage
+    ? tweetButtonContainer
+    : showError();
 }
