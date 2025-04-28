@@ -12,6 +12,7 @@
   "description": "",
   "main": "dist/cjs/tweetButton.js",
   "module": "dist/esm/tweetButton.js",
+  "types": "dist/esm/tweetButton.d.ts",
   "scripts": {
     "build": "rm -r dist && npm run build:esm && npm run build:cjs",
     "build:esm": "tsc",
