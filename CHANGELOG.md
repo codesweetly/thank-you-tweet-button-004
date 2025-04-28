@@ -1,5 +1,9 @@
 # Changelog
 
+## <small>5.0.1 (2025-04-28)</small>
+
+* fix(tweetbutton): change send text to post ([7e9102b](https://github.com/codesweetly/thank-you-tweet-button-004/commit/7e9102b))
+
 ## 5.0.0 (2025-04-28)
 
 * feat(tweetbutton)!: make users to specify the best npm package they have created ([455e011](https://github.com/codesweetly/thank-you-tweet-button-004/commit/455e011))
